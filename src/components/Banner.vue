@@ -199,7 +199,7 @@ export default {
 }
 @media only screen and (max-width: 768px) {
     .banner__wrapper{
-        height: 90vh !important;
+        height: 92vh !important;
     }
      .nav-item:nth-child(5), .nav-item:nth-child(6){
             border: none !important;
@@ -207,7 +207,7 @@ export default {
             padding: 0 !important;
         }
     .hero-section{
-        padding-top: 6rem !important;
+        padding-top: 5rem !important;
         h1{
             font-size: 1.8rem;
         }

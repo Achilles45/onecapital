@@ -42,12 +42,12 @@
 }
 .brand__wrapper{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     grid-gap: 30px;
 }
 @media only screen and (max-width: 768px){
     .brand1{
-        max-width: 80px !important;
+        max-width: 60px !important;
         height: auto;
     }
 }
