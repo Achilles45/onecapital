@@ -186,7 +186,7 @@ export default {
             padding: 0 !important;
         }
     .hero-section{
-        padding-top: 4rem !important;
+        padding-top: 6rem !important;
         h1{
             font-size: 1.8rem;
         }
