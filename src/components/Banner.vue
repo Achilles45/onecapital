@@ -52,7 +52,7 @@
                         <div class="balls six"></div>
                         <div class="balls seven"></div>
                         <div class="balls eight"></div> -->
-                        <img src="../assets/map.png" class="img-fluid map" alt="">
+                        <img src="../assets/map.png" class="img-fluid map d-none d-md-block" alt="">
                     </div>
                 </div>
             </div>
@@ -186,12 +186,13 @@ export default {
             padding: 0 !important;
         }
     .hero-section{
-        padding-top: 2rem !important;
+        padding-top: 4rem !important;
         h1{
-            font-size: 1.5rem;
+            font-size: 1.8rem;
         }
         p{
             font-size: .82rem;
+            padding-bottom: 1.2rem;
         }
     }
     .map{
