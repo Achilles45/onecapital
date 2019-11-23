@@ -9,20 +9,20 @@
                 </div>
                 <div class="col-md-4"></div>
             </div>
-            <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                    <img src="../assets/brand1.png" class="img-fluid brand brand1" alt="">
-                </div>
-                 <div class="col-md-3 col-sm-6 col-xs-6">
-                    <img src="../assets/brand2.png" class="img-fluid brand brand1" alt="">
-                </div>
-                 <div class="col-md-3 col-sm-6 col-xs-6">
-                    <img src="../assets/brand3.jpg" class="img-fluid brand brand1" alt="">
-                </div>
-                 <div class="col-md-3 col-sm-6 col-xs-6">
-                    <img src="../assets/brand4.png" class="img-fluid brand brand1" alt="">
-                </div>
-            </div>
+           <div class="brand__wrapper">
+               <div class="brand__box">
+                   <img src="../assets/brand1.png" class="img-fluid brand brand1" alt="">
+               </div>
+                <div class="brand__box">
+                   <img src="../assets/brand2.png" class="img-fluid brand brand1" alt="">
+               </div>
+                <div class="brand__box">
+                   <img src="../assets/brand3.jpg" class="img-fluid brand brand1" alt="">
+               </div>
+                <div class="brand__box">
+                   <img src="../assets/brand4.png" class="img-fluid brand brand1" alt="">
+               </div>
+           </div>
         </div>
     </div>
 </template>
@@ -39,6 +39,11 @@
         max-width: 120px;
         height: auto;
     }
+}
+.brand__wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    grid-gap: 30px;
 }
 @media only screen and (max-width: 768px){
     .brand1{

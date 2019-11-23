@@ -181,7 +181,7 @@ export default {
 }
 @media only screen and (max-width: 768px) {
     .banner__wrapper{
-        height: 70vh !important;
+        height: 90vh !important;
     }
      .nav-item:nth-child(5), .nav-item:nth-child(6){
             border: none !important;
