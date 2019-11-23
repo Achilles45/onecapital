@@ -90,12 +90,12 @@ export default {
         .nav-item{
             margin: 0 .7rem;
         }
-        .logo{
-            color: #fff;
-            font-weight: bolder;
-            text-decoration: none;
-            // font-family: 'Varela Round' !important;
-        }
+        // .logo{
+        //     color: #fff;
+        //     font-weight: bolder;
+        //     text-decoration: none;
+        //     // font-family: 'Varela Round' !important;
+        // }
         .nav-link{
             text-decoration: none;
             text-transform: uppercase;
