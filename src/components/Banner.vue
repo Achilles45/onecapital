@@ -1,9 +1,9 @@
 <template>
     <div class="banner__wrapper container-fluid">
-        <div class="container">
             <div class="navbar__wrapper">
                 <nav class="navbar navbar-expand-lg">
-                <router-link to="/about" class="logo"><h3>Onecapital</h3></router-link>
+                    <div class="container">
+                <router-link to="/" class="logo"><h3>Onecapital</h3></router-link>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </button>
@@ -30,13 +30,14 @@
                     </li>
                     </ul>
                 </div>
+                </div>
                 </nav>
             </div>
             <!--End of navbar section
             ==============-->
             <!--Hero section
             =================-->
-            <div class="hero-section">
+            <div class="hero-section container">
                 <div class="row">
                     <div class="col-md-6">
                         <h1>The most trusted digital assets exchange</h1>
@@ -56,12 +57,25 @@
                     </div>
                 </div>
             </div>
-        </div>
     </div>
 </template>
 <script>
 export default {
-    
+    mounted(){
+       this.fixNav();
+    },
+    methods:{
+        fixNav:function(){
+            const nav = document.querySelector('.navbar__wrapper');
+            window.onscroll =function(){
+                if(pageYOffset > 50){
+                    nav.classList.add('fixnav');
+                }else{
+                    nav.classList.remove('fixnav');
+                }
+            }
+        }
+    }
 }
 </script>
 <style lang="scss" scoped>
@@ -70,6 +84,7 @@ export default {
     background: $primary-color;
     color:#fff;
     height: 100vh;
+    width: 100%;
     .navbar__wrapper{
         padding-top: 1.8rem;
         .nav-item{
@@ -83,7 +98,7 @@ export default {
         .nav-link{
             text-decoration: none;
             text-transform: uppercase;
-            font-size: .79rem;
+            font-size: .77rem;
             color: #f4f4f4;
             font-weight: normal;
             opacity: .85;
@@ -123,6 +138,7 @@ export default {
             font-weight: bold;
             border-radius: 3px;
             opacity: .9;
+            box-shadow:  5px 5px 0px rgba(72,73,121,.10);
         }
         .img__wrapper{
             position:relative;
@@ -203,5 +219,31 @@ export default {
         height: auto;
         margin-top: 3rem;
     }
+}
+
+.fixnav{
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 5px 0px 30px rgba(0,0,0,.10) !important;
+    background: #fff;
+    width: 100% !important;
+    left: 0;
+    .logo{
+        color: #627081 !important;
+        font-weight: bolder !important;
+    }
+    .nav-link{
+        color: #627081 !important;
+        font-weight: bold !important;
+    }
+    .nav-item:nth-child(5), .nav-item:nth-child(6){
+            border: .8px solid #627081 !important;
+            border-radius: 2px;
+            padding: .3rem 1.8rem;
+        }
+        .fa-bars{
+            color: #627081 !important;
+        }
 }
 </style>
