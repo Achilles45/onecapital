@@ -191,7 +191,7 @@ export default {
             font-size: 1.8rem;
         }
         p{
-            font-size: .82rem;
+            font-size: .85rem;
             padding-bottom: 1.2rem;
         }
     }
