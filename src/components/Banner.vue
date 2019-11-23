@@ -197,6 +197,7 @@ export default {
 @keyframes animate{
     from{
         opacity: .4;
+        transform: rotate(180deg);
     }
     to{
         opacity: 1;

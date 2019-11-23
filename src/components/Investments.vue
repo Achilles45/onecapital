@@ -39,7 +39,8 @@
         }
         p{
             font-size: .9rem;
-            color: #131313;
+            color: #627081;
+            opacity: .9;
         }
     }
     .invest{
@@ -51,9 +52,10 @@
             text-transform: capitalize;
         }
         p{
-            color: #404040;
+            color: #627081;
             font-size: .85rem;
             padding-bottom: 1.4rem;
+            opacity: .9;
         }
         .register__btn{
             background: #fff;

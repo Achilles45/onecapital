@@ -24,7 +24,7 @@
 @import '../styles/colors';
 .about__wrapper{
 background: #F6F7FF;
-padding: 4rem 0;
+padding: 5rem 0;
 h3{
     font-weight: bold;
     padding-bottom: .7rem;
@@ -34,6 +34,7 @@ h3{
 p{
     color: #627081;
     font-size: .9rem;
+    opacity: .9;
 }
 }
 

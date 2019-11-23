@@ -4,6 +4,7 @@
    <Partner />
    <About />
    <Investments />
+   <Why />
   </div>
 </template>
 
@@ -13,6 +14,7 @@ import Banner from '@/components/Banner.vue';
 import Partner from '@/components/Partner.vue';
 import About from '@/components/About.vue';
 import Investments from '@/components/Investments.vue';
+import Why from '@/components/Why.vue';
 
 export default {
   name: 'home',
@@ -20,7 +22,8 @@ export default {
     Banner,
     Partner,
     About,
-    Investments
+    Investments,
+    Why
   }
 }
 </script>
