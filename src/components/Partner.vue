@@ -4,7 +4,7 @@
             <div class="row pb-2">
                 <div class="col-md-4"></div>
                 <div class="col-md-4 text-center">
-                    <h3>Our Awards and Mentions</h3>
+                    <h4>Our Awards and Mentions</h4>
                     <hr>
                 </div>
                 <div class="col-md-4"></div>
@@ -31,7 +31,7 @@
 .partners__wrapper{
     padding: 3rem 0;
     background: #fff;
-    h3{
+    h4{
         color: $primary-color;
         font-weight: bold;
     }
