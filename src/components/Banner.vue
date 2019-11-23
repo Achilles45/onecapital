@@ -52,7 +52,7 @@
                         <div class="balls six"></div>
                         <div class="balls seven"></div>
                         <div class="balls eight"></div> -->
-                        <img src="../assets/map.png" class="img-fluid map d-none d-md-block" alt="">
+                        <img src="../assets/map.png" class="img-fluid map" alt="">
                     </div>
                 </div>
             </div>
@@ -92,9 +92,12 @@ export default {
             padding-top: .3rem;
         }
         .nav-item:nth-child(5), .nav-item:nth-child(6){
-            border: .8px solid #fff !important;
+            border: .8px solid #fff;
             border-radius: 2px;
             padding: .3rem 1.8rem;
+        }
+        .fa-bars{
+            color: #fff;
         }
     }
 
@@ -177,11 +180,21 @@ export default {
     }
 }
 @media only screen and (max-width: 768px) {
-    .hero-section{
-        padding-top: 2rem;
-        h1{
-            font-size: 1.5rem;
+     .nav-item:nth-child(5), .nav-item:nth-child(6){
+            border: none !important;
+            border-radius: 0px !important;
+            padding: 0 !important;
         }
+    .hero-section{
+        padding-top: 2rem !important;
+        h1{
+            font-size: 1.8rem;
+        }
+    }
+    .map{
+        max-width: 350px;
+        height: auto;
+        margin-top: 3rem;
     }
 }
 </style>
