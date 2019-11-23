@@ -69,7 +69,7 @@ export default {
 .banner__wrapper{
     background: $primary-color;
     color:#fff;
-    min-height: 100vh;
+    height: 100vh;
     .navbar__wrapper{
         padding-top: 1.8rem;
         .nav-item{
@@ -180,6 +180,9 @@ export default {
     }
 }
 @media only screen and (max-width: 768px) {
+    .banner__wrapper{
+        height: 70vh !important;
+    }
      .nav-item:nth-child(5), .nav-item:nth-child(6){
             border: none !important;
             border-radius: 0px !important;
