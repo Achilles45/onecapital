@@ -190,9 +190,12 @@ export default {
         h1{
             font-size: 1.8rem;
         }
+        p{
+            font-size: .85rem;
+        }
     }
     .map{
-        max-width: 350px;
+        max-width: 320px;
         height: auto;
         margin-top: 3rem;
     }
