@@ -3,7 +3,7 @@
             <div class="navbar__wrapper">
                 <nav class="navbar navbar-expand-lg">
                     <div class="container">
-                <router-link to="/" class="logo"><h3>Onecapital</h3></router-link>
+                <router-link to="/" class="logo"><img src="../assets/logo-img.png" alt=""></router-link>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </button>
@@ -61,9 +61,9 @@
 </template>
 <script>
 export default {
-    mounted(){
-       this.fixNav();
-    },
+    // mounted(){
+    //    this.fixNav();
+    // },
     methods:{
         fixNav:function(){
             const nav = document.querySelector('.navbar__wrapper');
@@ -94,11 +94,12 @@ export default {
             color: #fff;
             font-weight: bolder;
             text-decoration: none;
+            // font-family: 'Varela Round' !important;
         }
         .nav-link{
             text-decoration: none;
             text-transform: uppercase;
-            font-size: .77rem;
+            font-size: .75rem;
             color: #f4f4f4;
             font-weight: normal;
             opacity: .85;
@@ -122,6 +123,7 @@ export default {
             padding-bottom: .8rem;
             text-transform: capitalize;
             text-shadow: 0.03em 0.03em 0.05em rgba(0,0,0,.10);
+            font-weight: 800;
         }
         p{
             opacity: .8;
@@ -130,8 +132,8 @@ export default {
             padding-bottom: 1rem;
         }
         .register__btn{
-            background: #fafafa;
-            color:#404040;
+            background: #fff;
+            color:$primary-color;
             font-size: .9rem;
             text-decoration: none;
             padding: 1.3rem 3rem;
@@ -230,20 +232,27 @@ export default {
     width: 100% !important;
     left: 0;
     .logo{
-        color: #627081 !important;
+        color: $primary-color !important;
         font-weight: bolder !important;
     }
     .nav-link{
-        color: #627081 !important;
+        color: $primary-color !important;
         font-weight: bold !important;
     }
     .nav-item:nth-child(5), .nav-item:nth-child(6){
-            border: .8px solid #627081 !important;
+            border: .8px solid $primary-color !important;
             border-radius: 2px;
             padding: .3rem 1.8rem;
         }
         .fa-bars{
             color: #627081 !important;
+        }
+        @media only screen and (max-width: 768px){
+            .nav-item:nth-child(5), .nav-item:nth-child(6){
+            border: none !important;
+            border-radius: 0px !important;
+            padding: 0 !important;
+        }
         }
 }
 </style>
