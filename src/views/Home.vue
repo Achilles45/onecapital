@@ -3,6 +3,7 @@
    <Banner />
    <Partner />
    <About />
+   <Investments />
   </div>
 </template>
 
@@ -11,13 +12,15 @@
 import Banner from '@/components/Banner.vue';
 import Partner from '@/components/Partner.vue';
 import About from '@/components/About.vue';
+import Investments from '@/components/Investments.vue';
 
 export default {
   name: 'home',
   components:{
     Banner,
     Partner,
-    About
+    About,
+    Investments
   }
 }
 </script>

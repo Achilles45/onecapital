@@ -42,17 +42,17 @@
                     <div class="col-md-6">
                         <h1>The most trusted digital assets exchange</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae aut modi pariatur officia harum assumenda voluptas laudantium quibusdam aliquid totam!</p>
-                        <router-link to="/register" class="register__btn">Create a free Account</router-link>
+                        <router-link to="/register" class="register__btn">Create a free Account &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa fa-arrow-right icons"></i></router-link>
                     </div>
                     <div class="col-md-6 img__wrapper">
-                        <!-- <div class="balls one"></div>
+                        <div class="balls one"></div>
                         <div class="balls two"></div>
                         <div class="balls three"></div>
                         <div class="balls four"></div>
                         <div class="balls five"></div>
                         <div class="balls six"></div>
                         <div class="balls seven"></div>
-                        <div class="balls eight"></div> -->
+                        <div class="balls eight"></div>
                         <img src="../assets/map.png" class="img-fluid map d-none d-md-block" alt="">
                     </div>
                 </div>
@@ -142,16 +142,22 @@ export default {
             opacity: .9;
             box-shadow:  5px 5px 0px rgba(72,73,121,.10);
         }
+        .icons{
+            animation-name: move;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
         .img__wrapper{
             position:relative;
         }
         .balls{
             position: absolute;
-            padding: .28rem;
+            padding: .2rem;
             border-radius: 50%;
-            background:#2326b8 !important;
+            background:#fafafa !important;
             animation-name: animate;
-            animation-duration: 2s;
+            animation-duration: 1s;
             animation-iteration-count: infinite;
             animation-direction: alternate;
          }
@@ -195,6 +201,15 @@ export default {
     to{
         opacity: 1;
          color: #efefef !important;
+    }
+}
+//Animate
+@keyframes move{
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(10px);
     }
 }
 @media only screen and (max-width: 768px) {

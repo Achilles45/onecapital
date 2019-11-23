@@ -24,7 +24,7 @@
 @import '../styles/colors';
 .about__wrapper{
 background: #F6F7FF;
-padding: 5rem;
+padding: 4rem 0;
 h3{
     font-weight: bold;
     padding-bottom: .7rem;
@@ -67,6 +67,18 @@ p{
     }
     to{
         transform: translateX(20px);
+    }
+}
+@media only screen and (max-width: 768px){
+    h3{
+        font-size: 1rem;
+    }
+    .small{
+        font-size: .85rem;
+    }
+    .content__overlay{
+        width: 85%;
+        left: 7% !important;
     }
 }
 </style>
