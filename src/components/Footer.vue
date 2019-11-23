@@ -47,6 +47,8 @@ footer{
     color: #fff;
     h4{
         padding-bottom: 1.2rem;
+        font-weight: bold;
+        font-size: 1.2rem;
     }
     p{
         opacity: .8;
@@ -71,7 +73,7 @@ footer{
         .news__btn{
             background: #F7C039;
             border: none;
-            padding: 1rem 2rem;
+            padding: 1rem 1.2rem;
             border-radius: 30px;
             width: 50%;
         }
