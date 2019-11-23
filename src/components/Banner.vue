@@ -188,10 +188,10 @@ export default {
     .hero-section{
         padding-top: 2rem !important;
         h1{
-            font-size: 1.8rem;
+            font-size: 1.5rem;
         }
         p{
-            font-size: .85rem;
+            font-size: .82rem;
         }
     }
     .map{

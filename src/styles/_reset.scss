@@ -8,7 +8,8 @@
 }
 body{
     font-family: 'Varela Round' !important;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
+    width: 100vw !important;
 }
 ul{
     list-style: none;
