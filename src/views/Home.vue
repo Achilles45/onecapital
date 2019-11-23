@@ -5,6 +5,7 @@
    <About />
    <Investments />
    <Why />
+   <Footer />
   </div>
 </template>
 
@@ -15,6 +16,7 @@ import Partner from '@/components/Partner.vue';
 import About from '@/components/About.vue';
 import Investments from '@/components/Investments.vue';
 import Why from '@/components/Why.vue';
+import Footer from '@/components/Footer.vue';
 
 export default {
   name: 'home',
@@ -23,7 +25,8 @@ export default {
     Partner,
     About,
     Investments,
-    Why
+    Why,
+    Footer
   }
 }
 </script>
