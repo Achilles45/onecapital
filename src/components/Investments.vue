@@ -24,7 +24,7 @@
 @import '../styles/colors';
 .investments{
     padding: 5rem 0;
-    background: #fafafa;
+    background: #fff;
     .main__wrapper{
         background: #fff;
         padding: .8rem .7rem;

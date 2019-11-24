@@ -23,10 +23,10 @@
                         <router-link to="/about" class="nav-link">Contact</router-link>
                     </li>
                      <li class="nav-item">
-                        <router-link to="/about" class="nav-link">Signup</router-link>
+                        <router-link to="/register" class="nav-link">Signup</router-link>
                     </li>
                      <li class="nav-item">
-                        <router-link to="/about" class="nav-link">Login</router-link>
+                        <router-link to="/login" class="nav-link">Login</router-link>
                     </li>
                     </ul>
                 </div>

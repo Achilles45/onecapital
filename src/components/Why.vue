@@ -27,7 +27,7 @@
 @import '../styles/colors';
 .why__wrapper{
     padding: 5rem 0;
-    background: #fff;
+    background: #fafafa;
     h4{
         color: $primary-color;
     }
